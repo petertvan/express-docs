@@ -1,0 +1,17 @@
+<h2>These are the docs</h2>
+<table>
+  <tr>
+    <th>_id</th>
+	<th>_rev</th>
+	<th>document_number</th>
+	<th>document_name</th>
+  </tr>
+  {{#each docs}}
+  <tr>
+    <td>{{ document_number }}</td>
+    <td>{{ document_name }}</td>
+	<td><a href="{{ source_path }}">source link</a></td>
+	<td><a href="{{ rendered_path }}">pdf link</a></td>
+  </tr>
+  {{/each}}
+</table>
